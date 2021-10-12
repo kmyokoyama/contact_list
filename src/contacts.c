@@ -8,5 +8,3 @@ CONTACT create_contact(char* name, char* phone) {
 
   return new_contact;
 }
-
-
