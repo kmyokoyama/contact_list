@@ -6,7 +6,8 @@ typedef struct contact {
 } CONTACT;
 
 typedef struct contacts {
-  CONTACT* list;
+  CONTACT *list;
   int size;
 } CONTACTS;
 
+CONTACT create_contact(char* name, char* phone);
