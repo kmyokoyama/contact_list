@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "contacts.h"
+#include "util.h"
 
 int main(int argc, char **argv){
 
@@ -8,11 +9,13 @@ int main(int argc, char **argv){
   
   printf("Enter a new name: ");
   fgets(name, MAX_STR, stdin);
+  remove_newline(name);
   
   printf("\n");
 
   printf("Enter a new phone: ");
   fgets(phone, MAX_STR, stdin);
+  remove_newline(phone);
 
   printf("name: %s, phone: %s\n", name, phone);
 
